@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/CHATGPTAPISAAS/static/css/main.a15f612a.css",
-    "main.js": "/CHATGPTAPISAAS/static/js/main.fadeb459.js",
+    "main.css": "/CHATGPTAPISAAS/static/css/main.95b98207.css",
+    "main.js": "/CHATGPTAPISAAS/static/js/main.a3350444.js",
     "static/js/787.c358a45b.chunk.js": "/CHATGPTAPISAAS/static/js/787.c358a45b.chunk.js",
     "index.html": "/CHATGPTAPISAAS/index.html",
-    "main.a15f612a.css.map": "/CHATGPTAPISAAS/static/css/main.a15f612a.css.map",
-    "main.fadeb459.js.map": "/CHATGPTAPISAAS/static/js/main.fadeb459.js.map",
+    "main.95b98207.css.map": "/CHATGPTAPISAAS/static/css/main.95b98207.css.map",
+    "main.a3350444.js.map": "/CHATGPTAPISAAS/static/js/main.a3350444.js.map",
     "787.c358a45b.chunk.js.map": "/CHATGPTAPISAAS/static/js/787.c358a45b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a15f612a.css",
-    "static/js/main.fadeb459.js"
+    "static/css/main.95b98207.css",
+    "static/js/main.a3350444.js"
   ]
 }
