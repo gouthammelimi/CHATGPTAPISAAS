@@ -1,43 +1,112 @@
+App.css
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: black;
+  position: fixed;
+  top:80px;
+  right: 5px;
+  left:50px;
+  bottom: 10px;
+  width: 1300px;
+  text-align: center;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(0, 0, 0, 0.9);
+  border-bottom: none;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0,0,0,.5);
 }
 
-.App-link {
-  color: #61dafb;
+.main h1{
+  background-color:#78ddfa	;
+  text-align: center;
+  border-radius: 3px;
+  position: fixed;
+  top:20px;
+  left:230px;
+  padding: 1px 0;
+  color: #01000f;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+}
+.side h1{
+  background-color:#78ddfa	;
+  position: fixed;
+  top:20px;
+  right: 250px;
+  text-align: center;
+  border-radius: 3px;
+  color: #01000f;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+}
+button{
+  background-color:#aeeafc; 
+}
+body{
+  background-image: url('https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg');
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.chat{
+  position: fixed;
+  top:50px;
+  left: 50px;
+  width: 500px;
+}
+.chat1{
+  position: fixed;
+  top:78px;
+  right: 120px;
+  width: 500px;
+}
+.side{
+  flex: 3;
+}
+.main{
+  flex: 3;
+}
+p{
+  text-align: justify;
+}
+
+.App .chat{
+  overflow: auto;
+  padding: 15px 20px 70px;
+  gap: 2px;
+}
+
+.form{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border: none;
+  font-size: 0.9rem;
+  resize: none;
+  padding: 16px 15px 16px 0;
+}
+input{
+  padding: 0.1rem;
+  height: 55px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid rgb(4, 0, 0) ;
+}
+#message{
+  padding: 1px;
+  width: calc(100% - 5rem); 
+}
+#image{
+  
+  padding: 1px;
+  width: calc(100% - 5rem);
 }
 
 #res{
   white-space: break-spaces;
   text-align: left;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

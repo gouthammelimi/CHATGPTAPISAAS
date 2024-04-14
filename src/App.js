@@ -33,29 +33,53 @@ function App() {
         .then((res) => res.json())
         .then((res) => {setImageResponse(res.image);console.log(res)});
     }
+
     return (
+
+        <body>
         <div className='App'>
+          <div className='main'>
+        <h1> ChatGPT </h1>
+        <ul className='chat'>
         <form onSubmit={handleSubmit}>
-            <label htmlFor='message'>Message</label>
+            <label htmlFor='message'></label>
             <input
+            placeholder='Search for query'
             id='message'
             type='text'
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            
             />
             <button type='submit'>Submit</button>
         </form>
+        <div id='res'>{response}</div>
+        </ul>
+        </div>
 
+        <hr/>
+        
+        <div className='side'>
+        <h1>Text to Image Converter</h1>
+          <ll className='chat1'>
         <form onSubmit={imageSubmit}>
-        <label htmlfor='image'>Image Description</label>
-            <input id='image'
-            type='text' value={image} 
+        <label htmlfor='image'></label>
+            <input placeholder="Search for image" 
+            id='image'
+            type='text' 
+            value={image} 
             onChange={(e) => setImage(e.target.value)} />
             <button type='submit'>Submit</button>
-            </form>
-        <div id='res'>{response}</div>
+        </form>
+
         <img src={imageResponse} alt="Generated" height={250} width={250}/>
+        </ll>
         </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        </body>
+
     );
     }
 

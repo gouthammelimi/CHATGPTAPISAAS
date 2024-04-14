@@ -9,7 +9,7 @@ const app = express();
 const port = 3005;
 const openai = new OpenAI({
     organization: "org-Ayp0Nf9ntKzAfWvX9wjRWw98",
-    apiKey: "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"
+    apiKey: "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"
 });
 
 app.use(bodyParser.json());
@@ -21,7 +21,7 @@ app.post('/chat', async (req, res) => {
         model: "gpt-3.5-turbo-instruct",
         prompt: `Pretend you are a chatbot assistant. you will be helping users with their questions. You have to do all the tasks as chatgpt
         ${message}`,
-        max_tokens: 100,
+        max_tokens: 1000,
         temperature: 0,
       });
     console.log(response.choices[0].text);
